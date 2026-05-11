@@ -72,6 +72,7 @@ namespace charp_egitim_3
         }
 
         public void topla() => Console.WriteLine(5 + 5);
+        public void cikar() => Console.WriteLine(5 -2);
 
     }
 }
