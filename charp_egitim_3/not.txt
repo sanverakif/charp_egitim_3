@@ -1,0 +1,89 @@
+<-----
+Namespace
+Benzer türdeki, davranýþtaki bileþenlerin bir arada tutulmasýný saðlar ve kodun okunabilirliðini artýrýr.
+Baþka yapý içerisinde oluþturulamaz. Ýçerisinde ise yapýsal davranýþlarý bulundurur. Class-record-struct-interface vb. Ayný dosyada birden fazla namespace olabilir. 
+
+File Scoped Namespace
+Dosya bazlý namespace oluþturulur. Scoplarý olmaz. Kullaným þekli, istediðimiz ismi veririz, farklý bir yerden çaðýrdýðýmýzda o isimle çaðýrýrýz. Birden fazla namespace olamaz. 
+namespace testfilescoped; using testfilescoped;
+
+Using
+Namespace altýndaki bileþenlere eriþim saðlayý kullanmamýza izin verir 
+
+global::
+Uygulamadaki tüm namespacelere ulaþmamýzý saðlar.
+----->
+
+<-----
+Koleksiyonlar 
+Veri setidir, birden fazla türü tutar.
+Dizilerde veri iþlemlerinde indeksler üzerinden düzenleme yapýlýyor. Koleksiyonlarda ise fonksiyonlar üzerinden yapýyoruz.
+Generic, non-generic ve specialized olmak üzere üçe ayrýlýr.
+
+Generic koleksiyonlar tip güvenlidir.
+List<T> Dictionary<TKey,TValue> HashSet<T> Queue<T> Stack<T> 
+LinkedList<T> SortedList<Tkey, Tvalue> ObservableCollection<T>
+
+Non Generic koleksiyonlar tip güvenli deðildir.
+ArrayList Hashtable BitArray Queue Stack LinkedList Sortable
+
+List<int> numara = new List<int>();		||		List<int> ss = new() { 1,2,3,4,5,6 };
+T parametresi türü temsil eder. Boyut otomatik olarak ayarlanýr.
+
+Dictionary<int, string> keyValues = new Dictionary<int, string>();
+Key deðerleri benzersizdir.
+bool valuekontrol = keyValues.ContainsValue("akif");            
+IEnumerable<KeyValuePair<int, string>> result = keyValues.Where(x => x.Value == "akif");
+var result = keyValues.Where(x => x.Value == "akif");          
+----->
+
+<-----
+Anonymous Type
+Ýhtiyaç duyulduðu an kullanýlýr. Baþka yerde kullanýlmaz. Property readonly tanýmlanýr ve atanan deðeri o türde oluþturur. Nesne oluþturmaya gerek yoktur.
+Derleyici tarafýndan tür belirlenir. Türü bilemediðimiz için var keywordu ile referans ederiz. Tanýmlandýðý metodun kapsamýnda kullanýlýr.
+Runtime da sýnýfýn türüne ulaþmamýz için dynamic keywordu ile nesneyi almamýz gerekir. Elideki nesneyi dýþarýya taþýmamýzý saðlar.
+----->
+
+<-----
+Null Operatörler
+-Null Conditional(?.): Referanslara güvenli þekide eriþim yapýlmasýný saðlar. Null olup olmadýðýna bakmadan iþlem yapmamýzý saðlar. 
+Örnek 1
+NullConditional person = new();    person.Name = "AKÝF";    Console.WriteLine(person?.Name); Referans null deðilse eleman gelecektir.
+
+Örnek 2
+NullConditional person = null;
+if (person == null)
+{
+    NullConditional person1 = new();
+    Console.WriteLine(person?.Name);
+}
+
+-Null Coalescing(??=): Deðiþken null ise baþka bir deðerle deðiþtirmek istendiðinde kullanýlýr.
+ Örnek 1 
+ NullCoalescing nullCoalescing = null;     nullCoalescing ??= new();
+
+ Örnek 2
+ int? v = null;     Console.WriteLine(v);
+ v ??= 15;          Console.WriteLine(v);
+
+ -Nullable(?): Deðer türlü deðiþkenlerin null olabilmesi için gerekli operatördür.
+
+ -is operatörü: Deðerin hangi türde olduðunu kontrol eder. 
+----->
+
+<-----
+----->
+
+<-----
+----->
+
+
+
+
+
+
+
+
+
+
+
