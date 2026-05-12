@@ -72,12 +72,38 @@ if (person == null)
 ----->
 
 <-----
+Enumeration
+Kodun anlaþýlabilir, okunabilir olmasýný saðlar. Sayýsal deðerleri metinsel semboller ile kontrol etmemizi saðlar.
 ----->
 
 <-----
+Struct
+Deðer türünde veri tipleri oluþtururuz. Classlarda referans, structlarda deðer türlü veri oluþturulur.
+Kalýtýmý / mirasý desteklemez. Sadece interfaceler implement edilir. Struct içinde field varsa newle veya newleme kullanabilir ve atama yapýlabilir.
+Property, metot varsa newlenmesi gerekir.
 ----->
 
+<-----
+Static
+Uygulama seviyesinde program sonlanana kadar veri tutmak için kullanýlýr. Field, metot, property vs. Static memberlar nesneye deðil sýnýfa aittir. Class adý üzerinden eriþilir. 
+Herhangi bir member çaðrýldýðýnda bu static yapýlanmadýr. Static class’ta nesne üretilemediði için inheritance, polymorphism ve instance mantýðý çalýþmaz; yapý tamamen sýnýf seviyesinde davranýr.
+Base classtaki static memberlarý miras durumlarýnda direk kullanabiliriz. Sadece derived classta eriþilmesini istersek protected olarakda iþaretleyebiliriz.
+----->
 
+<----
+Önemli
+Classlar referans tipte olduðundan nesneye baðlýdýr. Memberlara eriþim için nesne oluþturmak/newlemek gerekir. Bu durumda static memberlara eriþilemez.
+=>StaticKeywordWork staticKeywordWork = new StaticKeywordWork();           staticKeywordWork.MyProperty = 15;
+
+Statik memberlara eriþmek için new gerekmez. Çünkü nesneye deðil sýnýfa aittir. Sýnýf ismi üzerinden eriþilir. 
+=>StaticKeywordWork.Age = 15;
+
+Structlar referans tip deðildir. Value typedir. Member yapýlarýna göre newlemek gerekir.
+=>StructWork str;     str.age = 26;
+
+Tekrar özetlersek, Struct deðiþkeni gerçek veriyi taþýdýðý için field’lara eriþim mümkün olabilir; class deðiþkeni ise sadece referans olduðu için nesne oluþmadan member eriþimi yapýlamaz. 
+Static memberlar ise nesneye deðil sýnýfa ait olduðundan sadece class adýyla eriþilir.
+---->
 
 
 

@@ -21,3 +21,25 @@ Dynma(anon.sayi4);
 
 new NullConditional().Kontrol();
 new NullCoalescing().Kontrol();
+
+void XMetot()
+{
+    DatabaseType _databaseType = DatabaseType.SQL;
+    DatabaseType vvv = (DatabaseType)Enum.Parse(typeof(DatabaseType), _databaseType.ToString());
+    var asdasd = Enum.GetValues(typeof(DatabaseType));
+
+    foreach (var item in asdasd)
+    {
+        Console.WriteLine(item);
+    }
+}
+
+
+teststruct ccc = new teststruct();
+ccc.age = 10;
+
+StructWork sss;
+sss.age = 15;
+
+//sss.metotornek(); //hata verir newlenmesi gerek
+
