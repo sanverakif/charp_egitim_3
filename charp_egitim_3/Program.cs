@@ -38,7 +38,7 @@ void XMetot()
 teststruct ccc = new teststruct();
 ccc.age = 10;
 
-StructWork sss;
+StructWork sss = new StructWork();
 sss.age = 15;
 
 //sss.metotornek(); //hata verir newlenmesi gerek

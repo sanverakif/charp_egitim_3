@@ -73,7 +73,7 @@ if (person == null)
 
 <-----
 Enumeration
-Kodun anlaþýlabilir, okunabilir olmasýný saðlar. Sayýsal deðerleri metinsel semboller ile kontrol etmemizi saðlar.
+Kodun anlaþýlabilir, okunabilir olmasýný saðlar. Sayýsal deðerleri metinsel semboller ile kontrol etmemizi saðlar. Belirli deðerleri bir grup altýnda isimleri ve sayýsal karþýlýklarýný toplama amacýyla kullanýlýrlar.
 ----->
 
 <-----

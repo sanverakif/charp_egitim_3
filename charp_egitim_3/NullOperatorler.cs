@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace charp_egitim_3
+﻿namespace charp_egitim_3
 {
     //public class NullOperatorler
     //{
@@ -60,7 +54,7 @@ namespace charp_egitim_3
         public int Yas { get; set; }
         public void Kontrol()
         {
-            if ( Yas is int)
+            if (Yas is int)
                 Console.WriteLine("türü int");
 
             IsOpetator ısOpetator = new IsOpetator();
