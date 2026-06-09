@@ -11,6 +11,7 @@
     }
     public class StaticKeywordWork
     {
+        protected static int aka { get; set; }
         public int MyProperty { get; set; }
         static public int agefi;
         static public int Age { get; set; }
@@ -25,6 +26,7 @@
     {
         public void TestClass()
         {
+            aka = 10;
             StaticKeywordWork staticKeywordWork = new StaticKeywordWork();
             staticKeywordWork.MyProperty = 15;
 
@@ -50,5 +52,13 @@
     {
         public int say { get; set; }
         public int say2 { get; set; }
+    }
+
+    public class pro
+    {
+        public void akaa()
+        {
+            StaticKeywordWork a = new();
+        }
     }
 }

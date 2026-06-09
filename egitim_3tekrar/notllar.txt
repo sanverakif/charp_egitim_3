@@ -1,3 +1,4 @@
+***
 NameSpace
 Program içerisinde kullanýlacak tüm yapýlarý düzenli olmasý açýsýndan namespace çatýsý altýndan toplayabiliriz.
 
@@ -14,3 +15,24 @@ cs.proj içerisinde þu tanýmlamalar yapýlýr.
 global using test1; global using test2; global using test3; global using System.Data.SqlTypes;
 3.yöntem
 global::test3.CA xx = new();
+***
+
+***
+Koleksiyonlar
+Ýçerisinde birden fazla veri türünü barýndýran yapýlardýr. Dizilerde boyutu manuel belirlerken koleksiyonlarda buna gerek kalmaz.
+***
+
+
+***
+Struct
+Value type türündedir. Kalýtým desteklenmez. Sadece interfaceler implement edilir. Sýnýflara nazaran deðerleri önplanda tutar.
+Memberlarý(prop,metot) kullanmak için newlemek gerekir. Farklý bir struct türü ile kalýtýma girmez. Newlendiðinde field var ise default deðerleri verilir.
+Ýçerisinde static memberlar barýndýrabilir. Constructor ve static contructor tanýmlanabilir.
+***
+
+***
+Static
+Türün instance üzerinden deðil direk kendisi üzerinden modelleriz. Uygulama bazýnda çalýþýr. Nesneye ihtiyaç duyulmamaktadýr.
+Yapýlandýrma ayarlarýnda tek seferden tanýmlayabiliriz. Statik memberlar içerisinde sadece static memberlarý dahil edebilir / eriþilebilir.
+Eðer static class olursa içerisinde sadece static memberlar tanýmlanýr. Newlenemez. Ýnstance alýnamaz haliye contructor yasaklanmýþtýr.
+***
